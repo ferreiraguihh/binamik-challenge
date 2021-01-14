@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import Header from "./component/Header/Header";
 import Persons from "./component/Persons/Persons";
 import Footer from "./component/Footer/Footer";
-
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import store from "./store/reducers";

@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+import moment from 'moment';
+
 import './CardPerson.css';
 
 function CardPerson({ starPersons }) {
@@ -16,8 +19,9 @@ function CardPerson({ starPersons }) {
                     <p>Skin color: {starPersons.skin_color}</p>
                 </div>
             </div>
-            <div className="career">
-                <h6>Films</h6>
+            <div className="time">
+                <h6>Created: {moment(starPersons.created).format('MM/DD/YYYY ')}</h6>
+                <h6>Edited: {moment(starPersons.edited).format('MM/DD/YYYY ')}</h6>
             </div>
         </div>
     );

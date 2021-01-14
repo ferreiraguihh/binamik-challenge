@@ -5,7 +5,7 @@ h3 {
 
 h6 {
   margin: 5px 0;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 p {
@@ -27,7 +27,6 @@ p {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   box-shadow: 0 0 1em black;
-  cursor: pointer;
 }
 
 .container-info-person{
@@ -49,24 +48,12 @@ p {
   transform:scale(1.1);
 }
 
-.career {
+.time {
   background-color: #1f1a36;
   text-align: left;
   padding: 15px;
   margin-top: 30px;
-}
-
-.career ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.career ul li {
-  border: 1px solid #2d2747;
-  border-radius: 2px;
-  display: inline-block;
-  font-size: 12px;
-  margin: 0 7px 7px 0;
-  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

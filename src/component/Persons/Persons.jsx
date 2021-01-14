@@ -7,12 +7,15 @@ import search from '../../assets/img/search-wars.png'
 import { getPersons, filterPersons } from '../../store/action/persons'
 import Pagination from "react-js-pagination";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactLoading from 'react-loading';
+
 function Persons() {
     const [page, setPage] = useState(1)
     const [isFilter, setIsFilter] = useState(false)
     const [textFilter, setTextFilter] = useState('')
     const personsWar = useSelector((state) => state.persons.results);
     const qntPersons = useSelector((state) => state.persons.count);
+    const loading = useSelector((state) => state.loading)
 
     const dispatch = useDispatch();
 
@@ -54,9 +57,13 @@ function Persons() {
                 onChange={(e) => handlePageChange(e)}
             />
             <div className="container-page-card-person">
-                {personsWar?.map(starPersons => (
-                    <CardPerson key={starPersons.name} starPersons={starPersons} />
-                ))}
+                {loading ? <ReactLoading type="spin" color={'#231e39'} height={'20%'} width={130} /> :
+                    <>
+                        {personsWar?.map(starPersons => (
+                            <CardPerson key={starPersons.name} starPersons={starPersons} />
+                        ))}
+                    </>
+                }
             </div>
 
             <Pagination
