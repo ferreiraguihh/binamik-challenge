@@ -26,3 +26,18 @@
 .container-img-starwars img{
     width:100px
 }
+
+@media only screen and (max-width: 600px) {
+    .header-starwars img{
+        width: 125px;
+    }
+
+    .header-starwars h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .container-img-starwars{
+        width: 125px;
+    }
+  }
