@@ -5,9 +5,24 @@
     display: flex;
     align-items: center;
     padding: 0px 20px;
-    color: white;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-starwars img{
     width: 250px;
+}
+
+.container-img-starwars{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container-img-starwars img{
+    width:100px
 }
