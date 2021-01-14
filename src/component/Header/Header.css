@@ -1,0 +1,13 @@
+.header-starwars{
+    width: 100%;
+    background-color: #62707d;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    color: white;
+}
+
+.header-starwars img{
+    width: 250px;
+}
